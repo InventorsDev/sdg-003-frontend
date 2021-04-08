@@ -4,7 +4,7 @@ ReactJs is used to build the frontend of this application.
 
 ## About
 
-This app is built with the aim of being Earths most customer centric for raw foodstuffs or groceries. It is designed to help consumers find different groceries accross the region and make orders at cost-friendly rates for door-step delivery.The app is user friendly, easy to use and accommodates users with little or no tech experience.
+This app is built with the aim of being Earths most customer-centric for raw foodstuffs or groceries. It is designed to help consumers find different groceries across the region and make orders at cost-friendly rates for door-step delivery. The app is user friendly, easy to use and accommodates users with little or no tech experience.
 
 ## Mission
 
