@@ -1,4 +1,4 @@
-# sdg-003-backend
+# sdg-003-frontend
 
 ReactJs is used to build the frontend of this application.
 
@@ -8,11 +8,11 @@ This app is built with the aim of being Earths most customer-centric for raw foo
 
 ## Mission
 
-Our mission is to continually raise the bar of the customer experience by using the internet and technology to help consumers find, discover and buy any groceries or raw farm produce, and empower entreprenuers maximise their success.
+Our mission is to continually raise the bar of the customer experience by using the internet and technology to help consumers find, discover and buy any groceries or raw farm produce, and empower entrepreneurs to maximise their success.
 
 ## Why
 
-This App provides a solution that addresses the Sustainable Development Goal (SDG) 2: End hunger, achieve food security and improved nutrition and promote sustainable agriculture with Target 2.c Adopt measures to ensure the proper functioning of food commodity markets and their derivatives and facilitate timely access to market information, including on food reserves, in order to help limit extreme food price volatility. 
+This App provides a solution that addresses the Sustainable Development Goal (SDG) 2: End hunger, achieve food security and improved nutrition and promote sustainable agriculture with Target 2.c Adopt measures to ensure the proper functioning of food commodity markets and their derivatives and facilitate timely access to market information, including on food reserves, to help limit extreme food price volatility. 
 
 
 
