@@ -1,24 +1,70 @@
-# sdg-003-frontend
+# Getting Started with Create React App
 
-ReactJs is used to build the frontend of this application.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## About
+## Available Scripts
 
-This app is built with the aim of being Earths most customer-centric for raw foodstuffs or groceries. It is designed to help consumers find different groceries across the region and make orders at cost-friendly rates for door-step delivery. The app is user friendly, easy to use and accommodates users with little or no tech experience. 
+In the project directory, you can run:
 
-## Mission
+### `npm start`
 
-Our mission is to continually raise the bar of the customer experience by using the internet and technology to help consumers find, discover and buy any groceries or raw farm produce, and empower entrepreneurs to maximise their success.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Why
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-This App provides a solution that addresses the Sustainable Development Goal (SDG) 2: End hunger, achieve food security and improved nutrition and promote sustainable agriculture with Target 2.c Adopt measures to ensure the proper functioning of food commodity markets and their derivatives and facilitate timely access to market information, including on food reserves, to help limit extreme food price volatility. 
+### `npm test`
 
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+### `npm run build`
 
-## Authors
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-[@Adedotun](https://github.com/dee-d-dev)
-[@Ogboye eunice](https://github.com/eunice-ogboye)
-[@Olasupo Funke](https://github.com/Roxie-32)
-[@Oluwaseyi](https://github.com/cheayi)
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
