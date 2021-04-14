@@ -1,0 +1,110 @@
+html {
+    font-size: 16px;
+}
+body {
+    margin: 0;
+    background-color: #fdf7f7;
+    box-sizing: border-box;
+}
+.container {
+    margin: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.company-name {
+    display: flex;
+    text-align: center;
+}
+
+.header p {
+    color: #782DB4;
+    margin-top: 0;
+    margin-left: .5rem;
+}
+
+.form-container {
+    width: 40rem;
+    height: 40rem;
+    margin: 0rem auto;
+}
+
+.form-field {
+    margin-top: 2em;
+    width: 100%;
+}
+
+.row {
+    margin-bottom: 1.5rem;
+}
+
+.row:last-child{ 
+    margin: 0;
+}
+
+.first-row {
+    display: grid;
+    grid-template-columns: 20% 35% 35%;
+    grid-column-gap:5% ;
+}
+
+.second-row, .third-row {
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-column-gap:5% ;
+}
+.form-input {
+    text-align: left;
+    margin: 0;
+    width:100%;
+}
+
+.form-input input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+.form-title {
+    text-align: left;
+    margin-left: .5em;
+    font-weight: 400;
+}
+
+input {
+    padding: 1.5rem .7rem;
+    outline: none;
+    border: none;
+    margin: .5rem;
+    box-shadow: 1rem .3rem 1rem rgba(41, 40, 40, 0.438);
+    border-radius: 4px;
+}
+
+input::placeholder{
+    color: rgba(0, 0, 0, 0.27);
+    font-family: poppins;
+    font-size: .9rem;
+}
+
+select {
+    padding: 1.5rem 1.5rem;
+    outline: none;
+    border: none;
+    margin: .5rem;
+    box-shadow: 1rem .3rem 1rem rgba(41, 40, 40, 0.438);
+    border-radius: 4px;
+    font-family: poppins;
+    
+}
+
+option{
+    color: rgba(0, 0, 0, 0.27);
+    font-family: poppins;
+    font-size: .9rem;
+}
+

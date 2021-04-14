@@ -2,37 +2,67 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.btn {
   color: white;
+  width: 10rem;
+  height: 2.5rem;
+  margin: 1rem auto;
+  text-align: center;
+  border-radius: .2rem;
+  padding-top:1rem ;
 }
 
-.App-link {
-  color: #61dafb;
+.form-name {
+  color: #782DB4;
+  text-shadow: .5rem .3rem 1rem rgba(41, 40, 40, 0.438);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-greet {
+  text-shadow: .5rem .3rem 1rem rgba(41, 40, 40, 0.438);
+}
+
+.reg-btn{
+  background-color: #782DB4;
+}
+
+
+.auth{
+ display: grid;
+ grid-template-columns:40% 5% 40%;
+ align-items: center;
+ margin: 0;
+ margin-left: 6rem;
+ width: 80%;
+ 
+}
+
+.facebook-btn {
+  background-color: #4267b2;
+}
+
+.google-btn{
+  background-color: #dd4b39;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  margin-left: .4rem;
+}
+
+.footer {
+  padding-bottom: 2rem;
+}
+
+.login-form input {
+  width: 100%;
+}
+
+.title {
+  margin-left: .5rem;
+  text-align: left;
+}
+
+.forgot{
+  color: #782DB4;
 }
