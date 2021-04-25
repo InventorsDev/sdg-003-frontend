@@ -1,0 +1,19 @@
+/* DASHBOARD */
+.dashboard {
+  display: flex;
+  background: linear-gradient(to bottom, #b287f0, #eba3ba);
+  width: 10%;
+  padding: 10rem 3rem;
+  margin: 0;
+}
+
+.nav-items {
+  color: #fdeced;
+  margin: 0 0;
+  height: 100%;
+}
+
+.nav-item {
+  margin: 2rem auto;
+  justify-content: stretch;
+}

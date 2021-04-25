@@ -1,0 +1,266 @@
+.market {
+  /* height: 30rem; */
+  box-sizing: border-box;
+  padding: 2rem 6rem;
+  padding-bottom: 1.5rem;
+  background-image: url("./svg/flat-lay-citrus_23-2148853411\ 2.png");
+  background-color: #fff;
+  background-position: center;
+  background-size: cover;
+}
+
+.market-title {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/* NAVIGATION */
+
+.item-nav {
+  display: flex;
+}
+.item-nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 1rem auto;
+  justify-content: space-between;
+}
+
+.item-nav ul li {
+  margin: 0 0.5rem;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.5rem;
+  color: #a99a9a;
+  transition: 0.2s ease-in-out;
+}
+
+.market-nav:hover {
+  background-color: #7453b1;
+  border-radius: 5rem;
+  cursor: pointer;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+
+/* SHOW ITEMS */
+
+.show-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-template-rows: 11rem;
+  grid-column-gap: 1rem;
+  justify-content: center;
+  margin: 0 2rem;
+}
+
+.item {
+  border-radius: 1rem;
+  display: grid;
+  grid-template-rows: 65% 35%;
+  box-shadow: 0rem 0.2rem 0.2rem rgba(0, 0, 0, 0.253);
+}
+
+.item-1 {
+  background-color: #efd3d3;
+}
+
+.item-2 {
+  background-color: #f3fee5;
+}
+
+.item-3 {
+  background-color: #e6fde9;
+}
+
+.item-4 {
+  background-color: #eee8f8;
+}
+
+.item-5 {
+  background-color: #efd3d3;
+}
+
+.item-6 {
+  background-color: #e6fde9;
+}
+
+.item-img {
+  width: 60%;
+  margin: 0.7rem auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+.item-txt {
+  padding: 0.2rem 1rem;
+  border-radius: 0 0 1rem 1rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+/* DISCOUNT OFFERS */
+
+.offer {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  justify-content: space-between;
+  width: 22%;
+  margin-top: 2rem;
+  padding: 0rem 0rem;
+  align-items: center;
+}
+
+.offer-text {
+  padding: 0.2rem 0rem;
+  font-weight: 600;
+  margin: 0;
+  border: 0.1rem solid black;
+  border-radius: 0.4rem 0 0 0.4rem;
+}
+
+.percent {
+  background-color: #7453b1;
+  border-radius: 0.3rem;
+  padding: 0.3rem 1rem;
+  color: white;
+  margin: 0;
+  text-align: center;
+  transform: translateX(-0.2rem);
+}
+
+.discount-offer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+  grid-column-gap: 3%;
+  margin: 1rem 14rem;
+  margin-bottom: 1rem;
+  min-height: 12rem;
+  /* width: 100%; */
+  justify-content: space-between;
+}
+
+.d-item {
+  background-color: #e8e4e4;
+  border-radius: 0.5rem;
+  box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.219);
+  width: 100%;
+}
+
+.d-item-top {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.3rem 0.5rem;
+  min-height: 0.2rem;
+}
+
+.percent-off {
+  border: 0.1rem solid black;
+  border-radius: 0.7rem;
+  padding: 0.2rem 0.2rem 0.1rem 0.2rem;
+  font-weight: 700;
+  font-size: 0.7rem;
+  align-items: center;
+  height: 1rem;
+}
+
+.like {
+  border: 0.1rem solid black;
+  border-radius: 0.4rem;
+  padding: 0.2rem 0.2rem 0.1rem 0.2rem;
+  background-color: #fefcf8;
+  height: 1rem;
+}
+
+.item-picture {
+  width: 51%;
+  margin: 0rem auto;
+}
+
+.item-dscrpt {
+  display: grid;
+  grid-template-rows: repeat (4, 1fr);
+  font-size: 0.6rem;
+  font-weight: 600;
+  margin: 0 1rem;
+  text-align: left;
+}
+
+.stars {
+  display: flex;
+}
+
+.item-d-name span {
+  font-size: 0.5rem;
+  font-weight: 300;
+}
+
+.item-d-size {
+  margin-bottom: 0.3rem;
+}
+
+.item-d-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.price-rltd {
+  display: flex;
+}
+
+.price-text {
+  margin-right: 0.1rem;
+}
+
+.add-btn {
+  display: flex;
+  font-size: 0.5rem;
+  justify-content: space-between;
+  border: 0.1rem solid black;
+  padding: 0.1rem 0.1rem 0 0.1rem;
+  border-radius: 0.3rem;
+  background-color: #fff;
+}
+
+.add-btn-text {
+  margin-left: 0.3rem;
+}
+
+
+.market-footer{
+  /* margin: 1rem 7rem; */
+  display: flex;
+  justify-content: space-between;
+  margin-left: 15rem;
+}
+.market-footer .text {
+  font-family: "montserrat";
+  font-weight: 700;
+  font-size: 0.8rem;
+  margin-top: 2rem;
+  width: 70%;
+}
+
+.shop-btn {
+  background-color: #7453B1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 1.5rem;
+  padding: .1rem .5rem;
+  border-radius: 1rem;
+  font-size: .7rem;
+  color: #FEBC05;
+  font-weight: 700;
+}
+
+.shop-btn p{
+  margin-right: .5rem;
+}
+.arrow-right {
+  margin-top: .1rem;
+}

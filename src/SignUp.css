@@ -1,9 +1,8 @@
-html {
+/* html {
     font-size: 16px;
 }
 body {
-    margin: 0;
-    background-color: #fdf7f7;
+    margin: 0;  
     box-sizing: border-box;
 }
 .container {
@@ -18,6 +17,7 @@ body {
 
 .company-name {
     display: flex;
+    justify-content: space-around;
     text-align: center;
 }
 
@@ -107,4 +107,4 @@ option{
     font-family: poppins;
     font-size: .9rem;
 }
-
+ */
