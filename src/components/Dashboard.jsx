@@ -1,22 +1,34 @@
-import MenuIcon from "./Icons/MenuIcon";
 import { Link } from "react-router-dom";
+import Hamburger from "./Icons/Hamburger";
+import HomeIcon from "./Icons/HomeIcon";
+import CartIcon3 from "./Icons/CartIcon3";
+import MarketIcon3 from "./Icons/MarketIcon3";
 
 const Dashboard = () => {
   return (
     <div className="dashboard">
       <div className="nav-items">
         <div className="nav-item">
-          <MenuIcon />
+          <Hamburger />
         </div>
-        <Link to="/">
-          <div className="nav-item">Home</div>
+        <Link to="/" className="nav-item">
+          <div className="nav-item-icon">
+            <HomeIcon />
+          </div>
+          <div className="nav-item-text">Home</div>
         </Link>
-        <Link to="">
-          <div className="nav-item">Cart</div>
+        <Link to="" className="nav-item">
+          <div className="nav-item-icon">
+            <CartIcon3 />
+          </div>
+          <div className="nav-item-text">Cart</div>
         </Link>
 
-        <Link>
-          <div className="nav-item">Categories</div>
+        <Link to="/market" className="nav-item">
+          <div className="nav-item-icon">
+            <MarketIcon3 />
+          </div>
+          <div className="nav-item-text">Market</div>
         </Link>
       </div>
     </div>
