@@ -1,7 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
 
 .App {
   text-align: center;
   background: linear-gradient(to right, #eba3ba, #eba3ba, #aa83f8);
+  max-width: 120rem;
+  width: 100%;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 425px) {

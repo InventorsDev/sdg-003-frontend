@@ -2,15 +2,18 @@ import "../CartHeader.css";
 import CartIcon from "./Icons/CartIcon";
 import SearchIcon2 from "./Icons/SearchIcon2";
 import UserIcon from "./Icons/UserIcon";
+import {Link} from "react-router-dom"
 const CartHeader = () => {
   return (
     <div className="cart-header">
       <div className="left">
         <div className="menu">
-          <img src="https://img.icons8.com/android/24/000000/menu.png" />
+          <img src="https://img.icons8.com/android/24/000000/menu.png" alt="img"/>
         </div>
 
-        <div className="company-title">Agrico Market</div>
+        <Link to="/" className="company-title">
+          Agrico Market
+        </Link>
       </div>
 
       <div className="right">
@@ -20,13 +23,17 @@ const CartHeader = () => {
           <SearchIcon2 />
         </div>
 
-        <div className="cart-icon">
-          <CartIcon />
-        </div>
+        <Link to="/cart">
+          <div className="cart-icon">
+            <CartIcon />
+          </div>
+        </Link>
 
-        <div className="user-icon">
-          <UserIcon />
-        </div>
+        <Link to="/login">
+          <div className="user-icon">
+            <UserIcon />
+          </div>
+        </Link>
       </div>
     </div>
   );

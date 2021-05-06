@@ -40,7 +40,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className="nav-list">
+        <nav className="nav-list">
           <Link to="/" className="nav-links active">
             HOME
           </Link>
@@ -48,7 +48,7 @@ const HomePage = () => {
           <Link to="/market" className="nav-links">
             MARKET
           </Link>
-        </div>
+        </nav>
 
         <div className="other-pages">
           <div>
@@ -58,14 +58,14 @@ const HomePage = () => {
             </Link>
           </div>
           <div>
-            <Link className=" page-link">
+            <Link to="/HelpPage" className=" page-link">
               <InfoIcon />
               <div className="login-text link-icon">Help</div>
             </Link>
           </div>
 
           <div className="cart">
-            <Link className="page-link">
+            <Link to="/cart" className="page-link">
               <CartIcon />
               <div className="cart-text link-icon">Cart</div>
             </Link>
@@ -108,7 +108,9 @@ const HomePage = () => {
       </div>
 
       <div className="footer">
-        <button className="shop">SHOP NOW</button>
+        <Link to="/market" className="shop">
+          SHOP NOW
+        </Link>
       </div>
     </div>
   );

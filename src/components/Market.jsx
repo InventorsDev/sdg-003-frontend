@@ -5,8 +5,9 @@ import StarIcon1 from "./Icons/StarIcon1";
 import PriceIcon from "./Icons/PriceIcon";
 import CartIcon2 from "./Icons/CartIcon2";
 import ArrowRight from "./Icons/ArrowRight";
-
-const Market = () => {
+import { Link } from "react-router-dom";
+import Loader from "./Icons/Loader"
+const Market = ({ products, loading }) => {
   return (
     <div className="market">
       <div className="market-title">OUR MARKET</div>
@@ -14,17 +15,52 @@ const Market = () => {
       <div className="item-nav">
         <ul>
           <li className="market-nav active">ALL</li>
-          <li className="market-nav active">FRUITS</li>
-          <li className="market-nav active">BEANS</li>
-          <li className="market-nav active">GROUNDNUT OIL</li>
-          <li className="market-nav active">RICE</li>
-          <li className="market-nav active">NOODLES</li>
-          <li className="market-nav active">OTHERS</li>
+          <Link to="/product1">
+            <li className="market-nav active">FRUITS</li>
+          </Link>
+
+          <Link to="/product2">
+            <li className="market-nav active">BEANS</li>
+          </Link>
+
+          <Link to="/product2">
+            <li className="market-nav active">GROUNDNUT OIL</li>
+          </Link>
+
+          <Link to="/product3">
+            <li className="market-nav active">RICE</li>
+          </Link>
+
+          <Link to="/product3">
+            <li className="market-nav active">NOODLES</li>
+          </Link>
+
+          <Link to="/product4">
+            <li className="market-nav active">OTHERS</li>
+          </Link>
         </ul>
       </div>
 
-      <div className="show-items">
-        <div className="item item-1">
+      <div className="">
+        {loading ? (
+          <Loader/>
+        ) : (
+          <div className="show-items">
+            {products.map((product) => (
+              <div className={`item item-${product.id}`} key={product.id}>
+                <div className="item-img">
+                  <img src={"/img_assets/orange.png"} alt="" />
+                </div>
+                <div className="item-txt">
+                  <div className="name">{product.product_name}</div>
+                  <div className="size">{product.quantity} baskets full</div>
+                  <div className="price">₦{product.unit_price}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+        {/* <div className="item item-1">
           <div className="item-img">
             <img src="/img_assets/orange.png" alt="" />
           </div>
@@ -89,7 +125,7 @@ const Market = () => {
             <div className="size">1kg each</div>
             <div className="price">₦5,500</div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="offer">
@@ -277,9 +313,11 @@ const Market = () => {
           Agrico Market is an online store that provides with utmost quality,
           all edible food substances
         </p>
-        <div className="shop-btn">
-          <p>Relax and Shop</p> <ArrowRight />
-        </div>
+        <Link to="/product1">
+          <div className="shop-btn">
+            <p>Relax and Shop</p> <ArrowRight />
+          </div>
+        </Link>
       </div>
     </div>
   );

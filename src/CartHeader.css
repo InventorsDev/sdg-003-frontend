@@ -15,6 +15,11 @@
 .menu {
   margin-right: 2rem;
 }
+
+.company-title{
+  font-weight: 600;
+  font-size: 1.5rem;
+}
 .right {
   display: flex;
   justify-content: space-between;
@@ -29,10 +34,19 @@
   border: .1rem solid black;
 }
 
-.cart-search input {
+.cart-search input{
   background-color: transparent;
   border: none;
   outline: none;
+  width: 12rem;
+  margin-right: 1rem;
+}
+
+input::placeholder{
+  font-family: "montserrat";
+  font-weight: 500;
+  color: rgba(83, 82, 82, 0.61);
+  margin-right: 1.5rem;
 }
 
 .user-icon{

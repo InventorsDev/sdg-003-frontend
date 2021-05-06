@@ -1,7 +1,4 @@
 import ".././Login.css";
-import MenuIcon from "./Icons/MenuIcon";
-import UserIcon3 from "./Icons/UserIcon3";
-import svg2 from "../svg/vector2.svg";
 import UserIcon2 from "./Icons/UserIcon2";
 import PasswordIcon from "./Icons/PasswordIcon";
 import Dashboard from "./Dashboard";
@@ -13,7 +10,6 @@ const Login = () => {
     <div className="login">
       <Dashboard />
       <div className="body">
-
         <div className="body-main">
           <div className="form-container">
             <form className="new-form" action="">
@@ -52,7 +48,7 @@ const Login = () => {
 
             <Link to="/signup">
               <div className="register">
-                Don't have an account? <br />
+                <p>Don't have an account?</p>
                 <span>Create an account</span>
               </div>
             </Link>

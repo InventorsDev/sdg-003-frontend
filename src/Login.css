@@ -30,6 +30,7 @@
     display: flex;
     padding-top: 4rem;
     justify-content: space-around;
+    align-items: center;
 }
 .img-container {
   margin: 10rem 5rem 0 6rem;
@@ -43,12 +44,12 @@
 /* FORM */
 .form-container {
     background-color: #F2EEEE;
-    height: 30rem;
-    width: 25rem;
+    height: 32rem;
+    width: 100%;
+    max-width: 30rem;
     border-radius: 2rem;
     box-shadow: 0rem .2rem 1rem rgba(0, 0, 0, 0.253);
-    padding: 1rem 4rem;
-    margin-right: 3rem;
+    padding: 1rem 5rem;
 }
 
 .new-form {
@@ -60,6 +61,7 @@
 
 .form-head {
     margin-bottom: 3rem;
+    margin-top: 1rem;
 }
 .form-head p {
     font-size: 2rem;
@@ -71,7 +73,7 @@
     box-shadow: none;
     padding: 1rem 1rem 1rem 3.5rem;
     width: 100%;
-    border-radius: 1rem;
+    border-radius: .5rem;
     border: none;
     outline: none;
 }
@@ -106,7 +108,7 @@
 }
 
 .login-btn {
-    padding: 1rem 3rem;
+    padding: .5rem 3rem;
     background-color: #7453B1;
     border-radius: 3rem;
     outline: none;
@@ -120,8 +122,13 @@
 
 .register{
     margin-top: 3rem;
+    font-size: 1rem;
 }
 
+.register p {
+    margin: 0;
+    font-weight: 500;
+}
 .register span {
     font-weight: 600;
     line-height: 2.5rem;

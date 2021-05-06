@@ -15,20 +15,26 @@ const Dashboard = () => {
           <div className="nav-item-icon">
             <HomeIcon />
           </div>
-          <div className="nav-item-text">Home</div>
+          <div className="nav-item-text">
+            <p>Home</p>
+          </div>
         </Link>
         <Link to="" className="nav-item">
           <div className="nav-item-icon">
             <CartIcon3 />
           </div>
-          <div className="nav-item-text">Cart</div>
+          <div className="nav-item-text">
+            <p> Cart</p>
+          </div>
         </Link>
 
         <Link to="/market" className="nav-item">
           <div className="nav-item-icon">
             <MarketIcon3 />
           </div>
-          <div className="nav-item-text">Market</div>
+          <div className="nav-item-text">
+            <p>Market</p>
+          </div>
         </Link>
       </div>
     </div>
