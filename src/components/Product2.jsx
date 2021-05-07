@@ -23,7 +23,7 @@ const Product2 = ({ groundnutoil, loading }) => {
             ) : (
               <div className="left-col">
                 {groundnutoil.map((product) => (
-                  <div className="fruit-item">
+                  <div className="fruit-item" key={product.id}>
                     <div className="item-cancel-btn"></div>
                     <div className="fruit-img">
                       <img src={product.url} width="40%" alt="" />

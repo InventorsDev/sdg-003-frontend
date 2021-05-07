@@ -49,7 +49,7 @@ const Market = ({ products, loading }) => {
             {products.map((product) => (
               <div className={`item item-${product.id}`} key={product.id}>
                 <div className="item-img">
-                  <img src={"/img_assets/orange.png"} alt="" />
+                  <img src={product.url} width="60%" alt="" />
                 </div>
                 <div className="item-txt">
                   <div className="name">{product.product_name}</div>

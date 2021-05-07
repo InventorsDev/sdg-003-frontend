@@ -27,7 +27,7 @@ const Product3 = ({ rice, loading }) => {
             ) : (
               rice.map((riceItem) => (
                 <div>
-                  <div className="fruit-item">
+                  <div className="fruit-item" key={riceItem.id}>
                     <div className="item-cancel-btn"></div>
                     <div className="fruit-img">
                       <img src={riceItem.url} width="40%" alt="" />

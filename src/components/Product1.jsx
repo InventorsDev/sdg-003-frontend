@@ -27,7 +27,7 @@ const FruitItem = ({ fruits, loading }) => {
             ) : (
               <div className="left-col">
                 {fruits.map((fruit) => (
-                  <div className="fruit-item">
+                  <div className="fruit-item" key={fruit.id}>
                     <div className="item-cancel-btn"></div>
                     <div className="fruit-img">
                       <img src={fruit.url} alt="" width="70%"/>
