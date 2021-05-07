@@ -2,9 +2,15 @@ import CartHeader from "./CartHeader";
 import ArrowRight from "./Icons/ArrowRightBlack";
 import "../product.css";
 import { Link } from "react-router-dom";
-import Loader from "./Icons/Loader"
+import Loader from "./Icons/Loader";
 
 const FruitItem = ({ fruits, loading }) => {
+  // const addBtn = document.getElementByClassName("buy-btn");
+
+  const addToCart = () => {
+    console.log('added to cart')
+  }
+
   return (
     <div>
       <CartHeader />
@@ -17,14 +23,14 @@ const FruitItem = ({ fruits, loading }) => {
         <div className="section-body">
           <div>
             {loading ? (
-              <Loader/>
+              <Loader />
             ) : (
               <div className="left-col">
                 {fruits.map((fruit) => (
                   <div className="fruit-item">
                     <div className="item-cancel-btn"></div>
                     <div className="fruit-img">
-                      <img src="/img_assets/apple.png" alt="" />
+                      <img src={fruit.url} alt="" width="70%"/>
                     </div>
                     <div className="fruit-text">
                       <p className="fruit-name">{fruit.product_name}</p>
@@ -33,7 +39,7 @@ const FruitItem = ({ fruits, loading }) => {
                       </p>
                       <p className="fruit-price">₦{fruit.unit_price}</p>
                     </div>
-                    <div className="buy-btn">
+                    <div className="buy-btn" onClick={addToCart}>
                       <p>ADD TO CART</p>
                     </div>
                   </div>

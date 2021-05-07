@@ -26,7 +26,7 @@ const Product2 = ({ groundnutoil, loading }) => {
                   <div className="fruit-item">
                     <div className="item-cancel-btn"></div>
                     <div className="fruit-img">
-                      <img src="/img_assets/orange.png" alt="" />
+                      <img src={product.url} width="40%" alt="" />
                     </div>
                     <div className="fruit-text">
                       <p className="fruit-name">{product.product_name}</p>

@@ -30,7 +30,7 @@ const Product3 = ({ rice, loading }) => {
                   <div className="fruit-item">
                     <div className="item-cancel-btn"></div>
                     <div className="fruit-img">
-                      <img src="/img_assets/orange.png" alt="" />
+                      <img src={riceItem.url} width="40%" alt="" />
                     </div>
                     <div className="fruit-text">
                       <p className="fruit-name">{riceItem.product_name}</p>

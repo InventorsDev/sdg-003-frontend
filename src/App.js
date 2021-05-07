@@ -1,5 +1,4 @@
 import "./App.css";
-import Loader from "./components/Icons/Loader"
 import HomePage from "./components/HomePage";
 import Login from "./components/Login";
 import SignUp from "./components/Sign-up";
@@ -20,6 +19,8 @@ const App = () => {
   const [oil, setOil] = useState([])
   const [rice, setRice] = useState([]);
   const [loading, setLoading] = useState(true);
+
+  const [cart, setCart] = useState([]);
 
   useEffect(() => {
     const fetchItems = async () => {
@@ -49,6 +50,7 @@ const App = () => {
       const groundnutoil = getGroundnutoil.data.data;
 
       const rice = getRice.data.data;
+
 
       setProducts(realData);
       setFruits(fruitItems);
