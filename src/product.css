@@ -1,0 +1,87 @@
+.fruit-item-section {
+  background-color: #e5e5e5;
+  padding: 1rem 6rem;
+  height: 40rem;
+  box-sizing: border-box;
+}
+
+.section-head {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-between;
+}
+
+.section-head p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.section-body {
+  width: 100%;
+  height: 32rem;
+}
+
+.left-col {
+  display: grid;
+  height: 35rem;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 15rem));
+  grid-template-rows: repeat(auto-fill, minmax(10rem, 15rem));
+  grid-row-gap: 5%;
+  grid-column-gap: 4%;
+}
+
+.fruit-item {
+  width: 100%;
+  background-color: #f2eeee;
+  border-radius: 0.2rem;
+  padding: 0.5rem 0.4rem;
+  border-radius: 0.5rem;
+  box-shadow: 0rem 0rem 0.5rem rgba(0, 0, 0, 0.253);
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: 1rem 7rem 4rem 2rem;
+}
+
+.item-cancel-btn {
+  width: 1rem;
+  height: 1rem;
+  background-color: #c4c4c4;
+  border-radius: 1rem;
+  /* margin: 0.3rem; */
+}
+
+.fruit-img {
+  margin: 0;
+}
+
+.fruit-text p {
+  margin: 0 1rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.8rem;
+  padding: .1rem 0;
+}
+
+.fruit-price {
+  font-weight: 700 !important;
+}
+
+.buy-btn {
+  background-color: #bd8de3;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.buy-btn p {
+  margin: 0;
+  font-family: "montserrat";
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding-top: 0.5rem;
+}
+
+.footer-item {
+  display: flex;
+  justify-content: flex-end;
+}
+

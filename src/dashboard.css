@@ -1,0 +1,38 @@
+/* DASHBOARD */
+.dashboard {
+  display: flex;
+  background: #CAB4E9;
+  width: 12%;
+  padding: 4rem 1rem;
+  margin: 0;
+  height: 41rem;
+  padding-top: 1rem;
+}
+
+.nav-items {
+  height: 100%;
+  
+}
+
+.nav-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6rem;
+  /* outline: none; */
+}
+
+.nav-item-icon {
+  background-color: #FFFFFF;
+  border-radius: 2rem;
+  padding: .5rem .6rem;
+}
+
+.nav-item-text p{
+  display: flex;
+  justify-content: start;
+  margin-left: .1rem;
+  color: #FFFFFF;
+  font-weight: 600;
+  text-align: left;
+}

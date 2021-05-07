@@ -1,5 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
 .App {
   text-align: center;
+  background: linear-gradient(to right, #eba3ba, #eba3ba, #aa83f8);
+  max-width: 120rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 425px) {
+  .App {
+    text-align: center;
+    background: linear-gradient(to right, #eba3ba, #eba3ba, #aa83f8);
+  }
 }
 
 .btn {
@@ -8,46 +25,44 @@
   height: 2.5rem;
   margin: 1rem auto;
   text-align: center;
-  border-radius: .2rem;
-  padding-top:1rem ;
+  border-radius: 0.2rem;
+  padding-top: 1rem;
 }
 
 .form-name {
-  color: #782DB4;
-  text-shadow: .5rem .3rem 1rem rgba(41, 40, 40, 0.438);
+  color: #782db4;
+  text-shadow: 0.5rem 0.3rem 1rem rgba(41, 40, 40, 0.438);
 }
 
 .form-greet {
-  text-shadow: .5rem .3rem 1rem rgba(41, 40, 40, 0.438);
+  text-shadow: 0.5rem 0.3rem 1rem rgba(41, 40, 40, 0.438);
 }
 
-.reg-btn{
-  background-color: #782DB4;
+.reg-btn {
+  background-color: #782db4;
 }
 
-
-.auth{
- display: grid;
- grid-template-columns:40% 5% 40%;
- align-items: center;
- margin: 0;
- margin-left: 6rem;
- width: 80%;
- 
+.auth {
+  display: grid;
+  grid-template-columns: 40% 5% 40%;
+  align-items: center;
+  margin: 0;
+  margin-left: 6rem;
+  width: 80%;
 }
 
 .facebook-btn {
   background-color: #4267b2;
 }
 
-.google-btn{
+.google-btn {
   background-color: #dd4b39;
 }
 
 a {
   color: black;
   text-decoration: none;
-  margin-left: .4rem;
+  margin-left: 0.4rem;
 }
 
 .footer {
@@ -59,10 +74,10 @@ a {
 }
 
 .title {
-  margin-left: .5rem;
+  margin-left: 0.5rem;
   text-align: left;
 }
 
-.forgot{
-  color: #782DB4;
+.forgot {
+  color: #782db4;
 }
