@@ -3,6 +3,7 @@ import Hamburger from "./Icons/Hamburger";
 import HomeIcon from "./Icons/HomeIcon";
 import CartIcon3 from "./Icons/CartIcon3";
 import MarketIcon3 from "./Icons/MarketIcon3";
+import "../css/dashboard.css";
 
 const Dashboard = () => {
   return (

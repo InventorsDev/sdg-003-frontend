@@ -1,4 +1,4 @@
-import '../../loader.css'
+import '../../css/loader.css'
 const loader = () => {
     return (
       <div id="circularG">

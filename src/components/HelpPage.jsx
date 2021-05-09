@@ -1,5 +1,5 @@
-import "../helppage.css";
-import CartHeader from "./CartHeader";
+import "../css/helppage.css";
+import CartHeader from "./header/CartHeader";
 import SearchIcon2 from "./Icons/SearchIcon2";
 import YTIcon from "./Icons/YTIcon";
 import TwitterIcon from "./Icons/TwitterIcon";

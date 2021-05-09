@@ -1,5 +1,5 @@
-import "../Cart.css";
-import CartHeader from "./CartHeader";
+import "../css/Cart.css";
+import CartHeader from "./header/CartHeader";
 import ArrowRightBlack from "./Icons/ArrowRightBlack";
 const Cart = () => {
   return (

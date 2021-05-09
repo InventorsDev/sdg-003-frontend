@@ -1,56 +1,56 @@
-import CartHeader from "./CartHeader";
-import ArrowRight from "./Icons/ArrowRightBlack";
-import "../product.css";
+import CartHeader from "../header/CartHeader";
+import ArrowRight from "../Icons/ArrowRightBlack";
+import "../../css/product.css";
+import Loader from "../Icons/Loader";
 import { Link } from "react-router-dom";
-import Loader from "./Icons/Loader";
 
-const FruitItem = ({ fruits, loading }) => {
-  // const addBtn = document.getElementByClassName("buy-btn");
-
-  const addToCart = () => {
-    console.log('added to cart')
-  }
-
+const Product3 = ({ rice, loading }) => {
   return (
     <div>
       <CartHeader />
 
       <div className="fruit-item-section">
         <div className="section-head">
-          <p>FRUITS</p>
+          <div>
+            <p>RICE</p>
+          </div>
+
+          <div>
+            <p>NOODLES</p>
+          </div>
         </div>
 
         <div className="section-body">
-          <div>
+          <div className="left-col">
             {loading ? (
               <Loader />
             ) : (
-              <div className="left-col">
-                {fruits.map((fruit) => (
-                  <div className="fruit-item" key={fruit.id}>
+              rice.map((riceItem) => (
+                <div>
+                  <div className="fruit-item" key={riceItem.id}>
                     <div className="item-cancel-btn"></div>
                     <div className="fruit-img">
-                      <img src={fruit.url} alt="" width="70%"/>
+                      <img src={riceItem.url} width="40%" alt="" />
                     </div>
                     <div className="fruit-text">
-                      <p className="fruit-name">{fruit.product_name}</p>
-                      <p className="fruit-amount">
-                        {fruit.quantity} Basket full
-                      </p>
-                      <p className="fruit-price">₦{fruit.unit_price}</p>
+                      <p className="fruit-name">{riceItem.product_name}</p>
+                      <p className="fruit-amount">{riceItem.quantity}kg</p>
+                      <p className="fruit-price">₦10,000</p>
                     </div>
-                    <div className="buy-btn" onClick={addToCart}>
+                    <div className="buy-btn">
                       <p>ADD TO CART</p>
                     </div>
                   </div>
-                ))}
-              </div>
+                </div>
+              ))
             )}
-
-            {/* <div className="fruit-item">
+          </div>
+          <div>
+            {/* 
+            <div className="fruit-item">
               <div className="item-cancel-btn"></div>
               <div className="fruit-img">
-                <img src="/img_assets/apple.png" alt="" />
+                <img src="/img_assets/orange.png" alt="" />
               </div>
               <div className="fruit-text">
                 <p className="fruit-name">Apple</p>
@@ -163,12 +163,14 @@ const FruitItem = ({ fruits, loading }) => {
           </div>
         </div>
 
-        <Link to="/product2" className="footer-item">
-          <ArrowRight />
+        <Link to="/product4">
+          <div className="footer-item">
+            <ArrowRight />
+          </div>
         </Link>
       </div>
     </div>
   );
 };
 
-export default FruitItem;
+export default Product3;

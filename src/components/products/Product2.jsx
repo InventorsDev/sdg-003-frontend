@@ -1,44 +1,46 @@
-import CartHeader from "./CartHeader";
-import ArrowRight from "./Icons/ArrowRightBlack";
-import Loader from "./Icons/Loader";
-import "../product.css";
+import CartHeader from "../header/CartHeader";
+import ArrowRight from "../Icons/ArrowRightBlack";
+import "../../css/product.css";
+import { Link } from "react-router-dom";
+import Loader from "../Icons/Loader";
 
-const Product4 = ({loading, oils}) => {
+const Product2 = ({ groundnutoil, loading }) => {
   return (
-
     <div>
       <CartHeader />
 
       <div className="fruit-item-section">
         <div className="section-head">
           <div>
-            <p>PALM OIL</p>
-          </div>
-
-          <div>
-            <p>OTHERS</p>
+            <p>GROUNDNUT OIL</p>
           </div>
         </div>
 
         <div className="section-body">
-          <div className="left-col">
-            {loading ? <Loader/> : (oils.map(oil => (
+          <div>
+            {loading ? (
+             <Loader/>
+            ) : (
+              <div className="left-col">
+                {groundnutoil.map((product) => (
+                  <div className="fruit-item" key={product.id}>
+                    <div className="item-cancel-btn"></div>
+                    <div className="fruit-img">
+                      <img src={product.url} width="40%" alt="" />
+                    </div>
+                    <div className="fruit-text">
+                      <p className="fruit-name">{product.product_name}</p>
+                      <p className="fruit-amount">{product.quantity} Litres</p>
+                      <p className="fruit-price">₦{product.unit_price}</p>
+                    </div>
+                    <div className="buy-btn">
+                      <p>ADD TO CART</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
 
-            <div className="fruit-item" key={oil.id}>
-              <div className="item-cancel-btn"></div>
-              <div className="fruit-img">
-                <img src={oil.url} alt="" width="60%"/>
-              </div>
-              <div className="fruit-text">
-                <p className="fruit-name">{oil.product_name}</p>
-                <p className="fruit-amount">{oil.quantity}</p>
-                <p className="fruit-price">₦{oil.unit_price}</p>
-              </div>
-              <div className="buy-btn">
-                <p>ADD TO CART</p>
-              </div>
-            </div>
-            )))}
             {/* <div className="fruit-item">
               <div className="item-cancel-btn"></div>
               <div className="fruit-img">
@@ -141,12 +143,14 @@ const Product4 = ({loading, oils}) => {
           </div>
         </div>
 
-        <div className="footer-item">
-          <ArrowRight />
-        </div>
+        <Link to="/product3">
+          <div className="footer-item">
+            <ArrowRight />
+          </div>
+        </Link>
       </div>
     </div>
   );
 };
 
-export default Product4;
+export default Product2;

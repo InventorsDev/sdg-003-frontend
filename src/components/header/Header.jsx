@@ -1,5 +1,5 @@
-import MarketIcon from './Icons/MarketIcon.jsx'
-import UserIcon from './Icons/UserIcon.jsx';
+import MarketIcon from '../Icons/MarketIcon.jsx'
+import UserIcon from '../Icons/UserIcon.jsx';
 import {Link} from 'react-router-dom'                                                                                        
 const Header = ({login, register})=> {
     return (
