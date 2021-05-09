@@ -1,5 +1,5 @@
 import Dashboard from "./Dashboard";
-import "../Sign-up.css";
+import "../css/Sign-up.css";
 import UserIcon3 from "./Icons/UserIcon3";
 import UserIcon2 from "./Icons/UserIcon2";
 import MessageIcon from "./Icons/MessageIcon";

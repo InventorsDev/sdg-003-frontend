@@ -5,13 +5,15 @@ import SignUp from "./components/Sign-up";
 import Market from "./components/Market";
 import Cart from "./components/Cart";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Product1 from "./components/Product1";
-import Product2 from "./components/Product2";
-import Product3 from "./components/Product3";
-import Product4 from "./components/Product4";
+import Product1 from "./components/products/Product1";
+import Product2 from "./components/products/Product2";
+import Product3 from "./components/products/Product3";
+import Product4 from "./components/products/Product4";
 import HelpPage from "./components/HelpPage";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Product from "./components/products/Product";
+
 
 const App = () => {
   const [products, setProducts] = useState([]);
@@ -55,8 +57,8 @@ const App = () => {
       const rice = getRice.data.data;
 
       const oils = getPalmoil.data.data;
-      
-      console.log("oil:", oils)
+
+      console.log("oil:", oils);
 
       setProducts(realData);
       setFruits(fruitItems);
@@ -81,19 +83,24 @@ const App = () => {
           </Route>
 
           <Route path="/Cart" component={Cart} />
+
           <Route path="/Product1">
             <Product1 loading={loading} fruits={fruits} />
           </Route>
+
           <Route path="/Product2">
             <Product2 groundnutoil={oil} loading={loading} />
           </Route>
+
           <Route path="/Product3">
             <Product3 loading={loading} rice={rice} />
           </Route>
+
           <Route path="/Product4">
             <Product4 loading={loading} oils={palmoil} />
           </Route>
-          <Route path="/helppage" >
+
+          <Route path="/helppage">
             <HelpPage />
           </Route>
         </Switch>

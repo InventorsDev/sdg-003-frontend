@@ -6,7 +6,9 @@ import PriceIcon from "./Icons/PriceIcon";
 import CartIcon2 from "./Icons/CartIcon2";
 import ArrowRight from "./Icons/ArrowRight";
 import { Link } from "react-router-dom";
-import Loader from "./Icons/Loader"
+import Loader from "./Icons/Loader";
+
+
 const Market = ({ products, loading }) => {
   return (
     <div className="market">
@@ -20,19 +22,11 @@ const Market = ({ products, loading }) => {
           </Link>
 
           <Link to="/product2">
-            <li className="market-nav active">BEANS</li>
-          </Link>
-
-          <Link to="/product2">
             <li className="market-nav active">GROUNDNUT OIL</li>
           </Link>
 
           <Link to="/product3">
             <li className="market-nav active">RICE</li>
-          </Link>
-
-          <Link to="/product3">
-            <li className="market-nav active">NOODLES</li>
           </Link>
 
           <Link to="/product4">
@@ -43,7 +37,7 @@ const Market = ({ products, loading }) => {
 
       <div className="">
         {loading ? (
-          <Loader/>
+          <Loader />
         ) : (
           <div className="show-items">
             {products.map((product) => (
@@ -60,72 +54,7 @@ const Market = ({ products, loading }) => {
             ))}
           </div>
         )}
-        {/* <div className="item item-1">
-          <div className="item-img">
-            <img src="/img_assets/orange.png" alt="" />
-          </div>
-          <div className="item-txt">
-            <div className="name">Tangerine</div>
-            <div className="size">2 Basket full</div>
-            <div className="price">₦7,500</div>
-          </div>
-        </div>
-        <div className="item item-2">
-          <div className="item-img">
-            <img src="/img_assets/indomie.png" alt="" />
-          </div>
-          <div className="item-txt">
-            <div className="name">Indomie noodles</div>
-            <div className="size">3 cartons</div>
-            <div className="price">₦6,500</div>
-          </div>
-        </div>
-        <div className="item item-3">
-          <div className="item-img">
-            <img src="/img_assets/palm-oil.png" alt="" width="40%" />
-          </div>
-          <div className="item-txt">
-            <div className="name">Palm oil</div>
-            <div className="size">2 litres</div>
-            <div className="price">₦1,500</div>
-          </div>
-        </div>
-        <div className="item item-4">
-          <div className="item-img">
-            <img src="/img_assets/apple.png" alt="" />
-          </div>
-          <div className="item-txt">
-            <div className="name">Apple</div>
-            <div className="size">5 Basket full</div>
-            <div className="price">₦37,500</div>
-          </div>
-        </div>
-        <div className="item item-5">
-          <div className="item-img">
-            <img
-              src="/img_assets/images__2_-removebg-preview.png"
-              alt=""
-              width="60%"
-            />
-          </div>
-          <div className="item-txt">
-            <div className="name">Rany red kidney beans</div>
-            <div className="size">1kg</div>
-            <div className="price">₦2,200</div>
-          </div>
-        </div>
-        <div className="item item-6">
-          <div className="item-img">
-            <img src="/img_assets/images__14_-removebg-preview.png" alt="" />
-          </div>
-          <div className="item-txt">
-            <div className="name">
-              camelia red, white and brown kidney beans
-            </div>
-            <div className="size">1kg each</div>
-            <div className="price">₦5,500</div>
-          </div>
-        </div> */}
+        
       </div>
 
       <div className="offer">

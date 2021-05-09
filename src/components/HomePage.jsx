@@ -1,4 +1,4 @@
-import "../HomePage.css";
+import "../css/HomePage.css";
 import CartIcon from "./Icons/CartIcon";
 import MarketIcon from "./Icons/MarketIcon";
 import SearchIcon from "./Icons/SearchIcon";

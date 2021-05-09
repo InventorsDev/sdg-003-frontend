@@ -1,8 +1,8 @@
-import ".././Login.css";
+import "../css/Login.css";
 import UserIcon2 from "./Icons/UserIcon2";
 import PasswordIcon from "./Icons/PasswordIcon";
 import Dashboard from "./Dashboard";
-import "../dashboard.css";
+import "../css/dashboard.css";
 import {Link} from "react-router-dom"
 
 const Login = () => {

@@ -1,7 +1,7 @@
-import "../CartHeader.css";
-import CartIcon from "./Icons/CartIcon";
-import SearchIcon2 from "./Icons/SearchIcon2";
-import UserIcon from "./Icons/UserIcon";
+import "../../css/CartHeader.css";
+import CartIcon from "../Icons/CartIcon";
+import SearchIcon2 from "../Icons/SearchIcon2";
+import UserIcon from "../Icons/UserIcon";
 import {Link} from "react-router-dom"
 const CartHeader = () => {
   return (
