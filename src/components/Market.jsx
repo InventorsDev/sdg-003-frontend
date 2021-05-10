@@ -7,9 +7,7 @@ import CartIcon2 from "./Icons/CartIcon2";
 import ArrowRight from "./Icons/ArrowRight";
 import { Link } from "react-router-dom";
 import Loader from "./Icons/Loader";
-import Svg from "../svg/vector.svg";
-
-
+import Svg from "../svg/vector3.svg";
 
 const Market = ({ products, loading }) => {
   return (
@@ -56,7 +54,6 @@ const Market = ({ products, loading }) => {
             ))}
           </div>
         )}
-        
       </div>
 
       <div className="offer">
@@ -253,10 +250,17 @@ const Market = ({ products, loading }) => {
 
       {/* MOBILE VIEW FOR THE MARKET */}
       <div className="mobile-market">
-        <img src={Svg} alt=""/>
+        <div className="m-image">
+          <img src={Svg} alt="" />
+        </div>
+
+        <div className="mobile-text">
+          <h1>Relax and Shop</h1>
+
+          <p>Agrico Market is an online store, that provides with utmost quality and quantity all raw food substances </p>
+        </div>
       </div>
     </div>
-
   );
 };
 

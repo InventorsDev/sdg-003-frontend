@@ -62,7 +62,7 @@ body {
 
 .search {
   display: grid;
-  grid-template-columns: 20% 72% 8%;
+  grid-template-columns: 52% 40% 8%;
   grid-template-rows: 3rem;
   position: relative;
   background-color: white;
@@ -144,7 +144,7 @@ body {
 }
 
 .searchItems::placeholder {
-  transform: translateX(50%);
+  transform: translateX(0%);
   font-size: 0.9rem;
   font-family: "montserrat";
 }
@@ -162,7 +162,7 @@ body {
 }
 
 .svg-icon {
-  width: 50%;
+  width: 80%;
   margin: 0;
 }
 
@@ -184,6 +184,10 @@ body {
     display: none;
   }
 }
+
+/* .itemSearch {
+  width: 60%;
+} */
 
 @media screen and (max-width: 425px) {
   .itemSearch {

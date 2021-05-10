@@ -12,13 +12,14 @@
 @media screen and (max-width: 425px) {
   .market {
     background-image: none;
+    padding: 0;
   }
 }
 
 @media screen and (max-width: 425px) {
   .mobile-market {
     display: block;
-    background-color: #edf2f4;
+
   }
 }
 
@@ -183,7 +184,7 @@ img {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
   grid-column-gap: 3%;
-  margin: 1rem 14rem;
+  margin: 1rem 10rem;
   margin-bottom: 1rem;
   min-height: 12rem;
   /* width: 100%; */
@@ -327,6 +328,7 @@ img {
 
 /* MOBILE MARKET */
 
+
 .mobile-market img {
   display: none;
 }
@@ -334,7 +336,25 @@ img {
 @media screen and (max-width: 425px) {
   .mobile-market img {
     display: block;
-    margin-top: 10rem;
+    margin: 10rem 0;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+    
+  }
+}
+
+.mobile-market{
+  display: none;
+}
+
+.mobile-text{
+  display: none;
+}
+
+@media screen and (max-width: 425px) {
+  .mobile-market h1 {
+   font-family: "montserrat";
+   font-size: 1rem;
     
   }
 }

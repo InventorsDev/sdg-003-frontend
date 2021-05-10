@@ -1,6 +1,8 @@
 import "../css/Cart.css";
 import CartHeader from "./header/CartHeader";
 import ArrowRightBlack from "./Icons/ArrowRightBlack";
+
+import {Link} from 'react-router-dom'
 const Cart = () => {
   return (
     <div className="item-market">
@@ -131,7 +133,9 @@ const Cart = () => {
           <div className="cart-footer">
             <div className="shopping-btn">CONTINUE SHOPPING</div>
 
-            <div className="checkout-btn">CHECKOUT</div>
+            <Link to="/checkout">
+              <div className="checkout-btn">CHECKOUT</div>
+            </Link>
           </div>
 
           <div className="switch">

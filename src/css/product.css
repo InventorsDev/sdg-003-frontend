@@ -1,8 +1,9 @@
 .fruit-item-section {
   background-color: #e5e5e5;
-  padding: 1rem 6rem;
+  padding: 1rem 7rem;
   height: 40rem;
   box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .section-head {

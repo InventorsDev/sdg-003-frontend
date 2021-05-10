@@ -10,6 +10,7 @@ import Product2 from "./components/products/Product2";
 import Product3 from "./components/products/Product3";
 import Product4 from "./components/products/Product4";
 import HelpPage from "./components/HelpPage";
+import Checkout from "./components/Checkout"
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
@@ -103,6 +104,8 @@ const App = () => {
           <Route path="/helppage">
             <HelpPage />
           </Route>
+
+          <Route path="/checkout" component={Checkout}/>
         </Switch>
       </div>
     </Router>
