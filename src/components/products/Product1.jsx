@@ -3,7 +3,6 @@ import ArrowRight from "../Icons/ArrowRightBlack";
 import "../../css/product.css";
 import { Link } from "react-router-dom";
 import Loader from "../Icons/Loader"; 
-import Product from "./Product"
 
 import { connect } from "react-redux";
 

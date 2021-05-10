@@ -7,6 +7,8 @@ import CartIcon2 from "./Icons/CartIcon2";
 import ArrowRight from "./Icons/ArrowRight";
 import { Link } from "react-router-dom";
 import Loader from "./Icons/Loader";
+import Svg from "../svg/vector.svg";
+
 
 
 const Market = ({ products, loading }) => {
@@ -35,7 +37,7 @@ const Market = ({ products, loading }) => {
         </ul>
       </div>
 
-      <div className="">
+      <div className="show">
         {loading ? (
           <Loader />
         ) : (
@@ -248,7 +250,13 @@ const Market = ({ products, loading }) => {
           </div>
         </Link>
       </div>
+
+      {/* MOBILE VIEW FOR THE MARKET */}
+      <div className="mobile-market">
+        <img src={Svg} alt=""/>
+      </div>
     </div>
+
   );
 };
 

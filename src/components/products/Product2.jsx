@@ -16,6 +16,8 @@ const Product2 = ({ groundnutoil, loading }) => {
           </div>
         </div>
 
+
+
         <div className="section-body">
           <div>
             {loading ? (

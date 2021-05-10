@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import MarketIcon2 from "./Icons/MarketIcon2";
 import InfoIcon from "./Icons/InfoIcon";
 
+
 const HomePage = () => {
   return (
     <div class="HomePage">
@@ -106,6 +107,8 @@ const HomePage = () => {
           quality and freshness
         </div>
       </div>
+
+      <img src="/img_assets/Group 37.png" class="dot_group" alt=""/>
 
       <div className="footer">
         <Link to="/market" className="shop">

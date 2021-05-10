@@ -12,7 +12,7 @@ import Product4 from "./components/products/Product4";
 import HelpPage from "./components/HelpPage";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Product from "./components/products/Product";
+
 
 
 const App = () => {
@@ -99,7 +99,7 @@ const App = () => {
           <Route path="/Product4">
             <Product4 loading={loading} oils={palmoil} />
           </Route>
-
+          
           <Route path="/helppage">
             <HelpPage />
           </Route>
