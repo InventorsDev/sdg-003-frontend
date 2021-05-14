@@ -1,11 +1,14 @@
-.fruit-item-section {
+/* .fruit-item-section {
   background-color: #e5e5e5;
   padding: 1rem 7rem;
   height: 40rem;
   box-sizing: border-box;
   margin: 0 auto;
-}
+} */
 
+.products {
+  background-color:#E5E5E5;
+}
 .section-head {
   display: flex;
   margin-top: 1rem;
@@ -24,11 +27,11 @@
 
 .left-col {
   display: grid;
-  height: 35rem;
-  grid-template-columns: repeat(auto-fill, minmax(10rem, 15rem));
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 13rem));
   grid-template-rows: repeat(auto-fill, minmax(10rem, 15rem));
-  grid-row-gap: 5%;
-  grid-column-gap: 4%;
+  grid-row-gap: 3%;
+  grid-column-gap: 2%;
+  margin: 0 0 0 7rem;
 }
 
 .fruit-item {
@@ -41,6 +44,14 @@
   box-sizing: border-box;
   display: grid;
   grid-template-rows: 1rem 7rem 4rem 2rem;
+  cursor: pointer;
+  transition: ease-in .2s;
+}
+
+.fruit-item:hover{
+  
+  box-shadow: 0rem 0rem 0rem .2rem #bc8de39a;
+
 }
 
 .item-cancel-btn {
@@ -56,7 +67,7 @@
 }
 
 .fruit-text p {
-  margin: 0 1rem;
+  margin: 0 .1rem;
   text-align: left;
   font-weight: 600;
   font-size: 0.8rem;

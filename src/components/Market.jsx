@@ -17,43 +17,41 @@ const Market = ({ products, loading }) => {
       <div className="item-nav">
         <ul>
           <li className="market-nav active">ALL</li>
-          <Link to="/product1">
+          <Link to="/products">
             <li className="market-nav active">FRUITS</li>
           </Link>
 
-          <Link to="/product2">
+          <Link to="">
             <li className="market-nav active">GROUNDNUT OIL</li>
           </Link>
 
-          <Link to="/product3">
+          <Link to="">
             <li className="market-nav active">RICE</li>
           </Link>
 
-          <Link to="/product4">
+          <Link to="">
             <li className="market-nav active">OTHERS</li>
           </Link>
         </ul>
       </div>
 
       <div className="show">
-        {loading ? (
-          <Loader />
-        ) : (
+       
           <div className="show-items">
-            {products.map((product) => (
-              <div className={`item item-${product.id}`} key={product.id}>
+            
+              <div className={`item item-`} key="">
                 <div className="item-img">
-                  <img src={product.url} width="60%" alt="" />
+                  <img src="/img_assets/pinaple.png" width="60%" alt="" />
                 </div>
                 <div className="item-txt">
-                  <div className="name">{product.product_name}</div>
-                  <div className="size">{product.quantity} baskets full</div>
-                  <div className="price">₦{product.unit_price}</div>
+                  <div className="name">Fresh Pineapple</div>
+                  <div className="size">20 baskets full</div>
+                  <div className="price">₦40000</div>
                 </div>
               </div>
-            ))}
+            
           </div>
-        )}
+        
       </div>
 
       <div className="offer">

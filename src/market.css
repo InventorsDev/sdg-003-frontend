@@ -96,7 +96,7 @@
   border-radius: 1rem;
   display: grid;
   grid-template-rows: 65% 35%;
-  box-shadow: 0rem 0.2rem 0.2rem rgba(0, 0, 0, 0.253);
+  box-shadow: 0rem 0rem 0.3rem rgba(0, 0, 0, 0.253);
 }
 
 @media screen and (max-width: 425px) {
