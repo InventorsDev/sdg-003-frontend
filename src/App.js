@@ -8,11 +8,8 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import HelpPage from "./components/HelpPage";
 import Checkout from "./components/Checkout";
 import Section from "./components/Section";
-import Product from "./components/section/Products";
 import "./css/product.css";
-import { useEffect, useContext } from "react";
-import Context from "./store/Context";
-import CartHeader from "./components/header/CartHeader";
+import AllProducts from "./components/AllProducts";
 
 
 const App = () => {
@@ -71,15 +68,8 @@ const App = () => {
   // fetchItems();
   // }, []);
 
-  const context = useContext(Context);
-
-  useEffect(() => {
-    console.log(context);
-  }, [context]);
 
 
-
-  
   return (
     <Router>
       <div className="App">
@@ -94,22 +84,6 @@ const App = () => {
 
           <Route path="/Cart" component={Cart} />
 
-          <Route>
-            <CartHeader />
-            <div className="left-col">
-              {context.products.map((p) => (
-                <Product
-                  id={p.id}
-                  imageURL={p.url}
-                  title={p.product_name}
-                  qty={p.quantity}
-                  price={p.unit_price}
-                  addProductToCart={context.addProductToCart}
-                />
-              ))}
-            </div>
-          </Route>
-
           <Route path="/Section" component={Section} />
 
           <Route path="/helppage">
@@ -117,6 +91,11 @@ const App = () => {
           </Route>
 
           <Route path="/checkout" component={Checkout} />
+
+          <Route path="/products">
+            <AllProducts></AllProducts>
+          </Route>
+          
         </Switch>
       </div>
     </Router>

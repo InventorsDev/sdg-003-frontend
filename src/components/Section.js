@@ -9,11 +9,11 @@ class Section extends Component {
     return (
       <Section>
         <Header />
-        <Route path="/products" component={Products} exact />
+        {/* <Route path="/products" component={Products} exact /> */}
         <Route path="/products/:id" component={Details} />
         
 
-        <Products />
+        {/* <Products /> */}
       </Section>
     );
   }
