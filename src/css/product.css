@@ -64,6 +64,9 @@
 
 .fruit-img {
   margin: 0;
+  max-width: 50%;
+  margin: 1rem auto;
+  object-fit: contain;
 }
 
 .fruit-text p {
@@ -82,6 +85,13 @@
   background-color: #bd8de3;
   border-radius: 0.5rem;
   cursor: pointer;
+  transition: .2s ease-in-out;
+
+}
+
+.buy-btn:hover{
+  background-color: #fff;
+  transition: .2s ease-in-out;
 }
 
 .buy-btn p {
@@ -89,7 +99,7 @@
   font-family: "montserrat";
   font-size: 0.7rem;
   font-weight: 800;
-  padding-top: 0.5rem;
+  padding-top: 0.6rem;
 }
 
 .footer-item {

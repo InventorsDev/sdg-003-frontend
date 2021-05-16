@@ -80,3 +80,8 @@ a {
 .forgot {
   color: #782db4;
 }
+
+.loader-gif{
+  margin: 7rem auto 0 auto;
+  transform: translateX(700%);
+}

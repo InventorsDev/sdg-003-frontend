@@ -14,18 +14,12 @@ import { ADD_TO_CART, REMOVE_FROM_CART, CLEAR_CART } from "./types";
 // const [items, setItems] = useState([]);
 // setItems(result);
 
-
-
-
 const GlobalState = (props) => {
-  const products = [
-    
-   
-  ];
+  const products = [];
   const [state, dispatch] = useReducer(Reducer, { cart: [] });
 
   //add products to cart
-  const addProductToCart = (product) => {
+  const AddProductToCart = (product) => {
     dispatch({
       type: ADD_TO_CART,
       payload: product,
@@ -51,7 +45,7 @@ const GlobalState = (props) => {
     <Context.Provider
       value={{
         products: products,
-        addProductToCart: addProductToCart,
+        AddProductToCart: AddProductToCart,
         removeProductFromCart: removeProductFromCart,
         clearCart: clearCart,
         cart: state.cart,

@@ -54,7 +54,7 @@ const Cart = () => {
             </div>
           </div>
 
-          <div className="measurement">
+          {/* <div className="measurement">
             <div className="m-item item-obj">
               <div className="cancel-btn"></div>
               <div className="item-prop">
@@ -122,7 +122,7 @@ const Cart = () => {
             <div className="m-item total">
               <p>₦3500</p>
             </div>
-          </div>
+          </div> */}
 
           <div className="total-sum">
             <p>

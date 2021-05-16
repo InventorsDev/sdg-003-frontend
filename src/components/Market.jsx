@@ -36,22 +36,18 @@ const Market = ({ products, loading }) => {
       </div>
 
       <div className="show">
-       
-          <div className="show-items">
-            
-              <div className={`item item-`} key="">
-                <div className="item-img">
-                  <img src="/img_assets/pinaple.png" width="60%" alt="" />
-                </div>
-                <div className="item-txt">
-                  <div className="name">Fresh Pineapple</div>
-                  <div className="size">20 baskets full</div>
-                  <div className="price">₦40000</div>
-                </div>
-              </div>
-            
+        <div className="show-items">
+          <div className={`item item-`} key="">
+            <div className="item-img">
+              <img src="/img_assets/pinaple.png" width="60%" alt="" />
+            </div>
+            <div className="item-txt">
+              <div className="name">Fresh Pineapple</div>
+              <div className="size">20 baskets full</div>
+              <div className="price">₦40000</div>
+            </div>
           </div>
-        
+        </div>
       </div>
 
       <div className="offer">
@@ -239,7 +235,7 @@ const Market = ({ products, loading }) => {
           Agrico Market is an online store that provides with utmost quality,
           all edible food substances
         </p>
-        <Link to="/product1">
+        <Link to="/products">
           <div className="shop-btn">
             <p>Relax and Shop</p> <ArrowRight />
           </div>
@@ -255,7 +251,10 @@ const Market = ({ products, loading }) => {
         <div className="mobile-text">
           <h1>Relax and Shop</h1>
 
-          <p>Agrico Market is an online store, that provides with utmost quality and quantity all raw food substances </p>
+          <p>
+            Agrico Market is an online store, that provides with utmost quality
+            and quantity all raw food substances{" "}
+          </p>
         </div>
       </div>
     </div>
