@@ -158,7 +158,7 @@ body {
 
 .SearchIcon {
   border-radius: 0.6rem;
-  padding: 0.7rem 0.4rem;
+  padding: 0.5rem 0.4rem;
 }
 
 .svg-icon {
@@ -334,7 +334,8 @@ main .text span {
 }
 
 .homeImage {
-  transform: translateY(35%);
+  width: 35%;
+  transform: translateY(40%);
 }
 
 @media screen and (max-width: 768px) {

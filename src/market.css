@@ -187,7 +187,7 @@ img {
   margin: 1rem 10rem;
   margin-bottom: 1rem;
   min-height: 12rem;
-  /* width: 100%; */
+  width: 100%;
   justify-content: space-between;
 }
 
@@ -201,7 +201,7 @@ img {
   background-color: #e8e4e4;
   border-radius: 0.5rem;
   box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.219);
-  width: 100%;
+  width: 10rem;
 }
 
 .d-item-top {

@@ -7,17 +7,15 @@ import Cart from "./Cart";
 
 const AllProducts = () => {
   const [items, setItems] = useState([]);
-  const [storeItem, setStoreItem] = useState(items);
+  const [storeItem, setStoreItem] = useState([]);
   const AddProductToCart = (id) => {
     const cartItems = items.filter((item) => {
       return item.id === id;
     });
     
     // localStorage.setItem('item',cartItems)
-    // console.log(cartItems)
-
-    setStoreItem(items)
     
+    console.log(cartItems)
     
   };
 
@@ -32,8 +30,10 @@ const AllProducts = () => {
 
       setItems(data.data.data);
       setLoading(false);
+      console.log(data.data.data)
     }
     fetchData();
+
   }, []);
 
   return (
