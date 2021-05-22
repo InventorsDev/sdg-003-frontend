@@ -6,7 +6,6 @@
 
 .App {
   text-align: center;
-  background: linear-gradient(to right, #eba3ba, #eba3ba, #aa83f8);
   max-width: 120rem;
   width: 100%;
   margin: 0 auto;
@@ -80,4 +79,9 @@ a {
 
 .forgot {
   color: #782db4;
+}
+
+.loader-gif{
+  margin: 7rem auto 0 auto;
+  transform: translateX(700%);
 }

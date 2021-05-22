@@ -1,6 +1,8 @@
 import "../css/Cart.css";
 import CartHeader from "./header/CartHeader";
 import ArrowRightBlack from "./Icons/ArrowRightBlack";
+
+import {Link} from 'react-router-dom'
 const Cart = () => {
   return (
     <div className="item-market">
@@ -52,7 +54,7 @@ const Cart = () => {
             </div>
           </div>
 
-          <div className="measurement">
+          {/* <div className="measurement">
             <div className="m-item item-obj">
               <div className="cancel-btn"></div>
               <div className="item-prop">
@@ -120,7 +122,7 @@ const Cart = () => {
             <div className="m-item total">
               <p>₦3500</p>
             </div>
-          </div>
+          </div> */}
 
           <div className="total-sum">
             <p>
@@ -131,7 +133,9 @@ const Cart = () => {
           <div className="cart-footer">
             <div className="shopping-btn">CONTINUE SHOPPING</div>
 
-            <div className="checkout-btn">CHECKOUT</div>
+            <Link to="/checkout">
+              <div className="checkout-btn">CHECKOUT</div>
+            </Link>
           </div>
 
           <div className="switch">

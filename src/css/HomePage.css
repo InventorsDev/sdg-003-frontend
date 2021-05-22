@@ -7,18 +7,19 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "montserrat";
+  overflow-x: hidden;
+  min-height: 10rem;
 }
 
 .HomePage {
   background: linear-gradient(to bottom, #eba3ba, #aa83f8);
-  margin: 0;
-  padding: 0;
+  min-height: 100%;
 }
 
 @media screen and (max-width: 425px) {
   .HomePage {
     background: linear-gradient(to top, #eba3ba, #aa83f8);
-    height: 40rem;
+    /* height: 100%; */
   }
 }
 
@@ -41,6 +42,14 @@ body {
   }
 }
 
+@media screen and (max-width: 425px) {
+  .header {
+    display: block;
+    padding: 0rem 1rem;
+    background: linear-gradient(to bottom, #aa83f8, #aa83f8);
+  }
+}
+
 .logo-icon {
   margin: 0 5rem 0 3rem;
 }
@@ -53,7 +62,7 @@ body {
 
 .search {
   display: grid;
-  grid-template-columns: 20% 72% 8%;
+  grid-template-columns: 52% 40% 8%;
   grid-template-rows: 3rem;
   position: relative;
   background-color: white;
@@ -69,17 +78,19 @@ body {
 @media screen and (max-width: 768px) {
   .search {
     margin: 0 2rem;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 425px) {
   .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0rem;
     grid-template-rows: 2rem;
     height: 2rem;
-    grid-template-columns: 30% 60% 8%;
-    grid-column-gap: 2%;
-    margin-top: 2rem;
+    margin: 2rem auto;
   }
 }
 
@@ -92,7 +103,9 @@ body {
 
 @media screen and (max-width: 425px) {
   .icon-grid {
-    height: 2rem;
+    border-radius: 0.6rem;
+    height: 100%;
+    width: 2.5rem;
   }
 }
 
@@ -107,6 +120,12 @@ body {
   font-family: "montserrat";
 }
 
+@media screen and (max-width: 425px) {
+  .category {
+    display: none;
+  }
+}
+
 .searchItems {
   width: 100%;
   height: 10%;
@@ -119,32 +138,40 @@ body {
 
 @media screen and (max-width: 425px) {
   .searchItems {
-    padding: 0 0rem 0 1rem;
-    width: 90%;
+    padding: 0 0rem 0 0.2rem;
+    width: 100%;
   }
 }
 
 .searchItems::placeholder {
-  transform: translateX(50%);
+  transform: translateX(0%);
   font-size: 0.9rem;
   font-family: "montserrat";
 }
 
 @media screen and (max-width: 425px) {
   .searchItems::placeholder {
-    transform: translateX(20%);
+    transform: translateX(0%);
     font-size: 0.7rem;
   }
 }
 
 .SearchIcon {
   border-radius: 0.6rem;
-  padding: 0.7rem 0.4rem;
+  padding: 0.5rem 0.4rem;
 }
 
 .svg-icon {
-  width: 50%;
+  width: 80%;
   margin: 0;
+}
+
+@media screen and (max-width: 425px) {
+  .svg-icon {
+    width: 80%;
+    padding: 0;
+    margin-top: 0.2rem;
+  }
 }
 .other-icons {
   display: flex;
@@ -155,6 +182,17 @@ body {
 @media screen and (max-width: 425px) {
   .other-icons {
     display: none;
+  }
+}
+
+/* .itemSearch {
+  width: 60%;
+} */
+
+@media screen and (max-width: 425px) {
+  .itemSearch {
+    width: 100%;
+    margin: 0 1rem;
   }
 }
 
@@ -181,12 +219,18 @@ body {
   margin-right: 1rem;
 }
 
+@media screen and (max-width: 425px) {
+  .nav-list {
+    display: none;
+  }
+}
+
 .nav-list ul li {
   display: inline-block;
 }
 
 .nav-links {
-  margin: 0 .3rem;
+  margin: 0 0.3rem;
   font-weight: 700;
 }
 
@@ -200,6 +244,11 @@ body {
   align-items: center;
 }
 
+@media screen and (max-width: 425px) {
+  .other-pages {
+    display: none;
+  }
+}
 .page-link {
   display: flex;
   align-items: center;
@@ -215,11 +264,22 @@ body {
   color: white;
 }
 
+.dot_group {
+  display: none;
+}
+
+@media screen and (max-width: 425px) {
+  .dot_group {
+    display: block;
+    margin: 5rem auto 3rem auto;
+  }
+}
+
 /* MAIN TEXT */
 main {
   margin-top: 8rem;
   display: flex;
-  height: 18rem;
+  /* height: 18rem; */
 }
 
 @media screen and (max-width: 425px) {
@@ -274,7 +334,8 @@ main .text span {
 }
 
 .homeImage {
-  transform: translateY(35%);
+  width: 35%;
+  transform: translateY(40%);
 }
 
 @media screen and (max-width: 768px) {
@@ -286,12 +347,13 @@ main .text span {
 /* MOBILE MAIN */
 .mobile-main {
   display: none;
+  min-height: 27rem;
 }
 
 @media screen and (max-width: 425px) {
   .mobile-main {
     display: block;
-    margin: 5rem 0;
+    margin-top: 5rem;
     color: white;
   }
 
@@ -344,9 +406,9 @@ main .text span {
 
 @media screen and (max-width: 425px) {
   .footer {
-    grid-row-gap: 1rem;
-    margin: auto;
+    margin: 0 auto;
     width: 70%;
+    padding-bottom: 2rem;
   }
 }
 

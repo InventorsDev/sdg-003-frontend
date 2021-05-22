@@ -1,10 +1,12 @@
 .item-market {
   background-color: #e5e5e5;
-  /* height: 45rem; */
+  min-height: 41rem;
 }
 
 .cart-body {
   padding: 1rem 5rem;
+  background-color: #e5e5e5;
+
 }
 
 .page-name {
